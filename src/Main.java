@@ -93,7 +93,7 @@ public class Main {
          int friday = 4;
          int daysPerWeek = 7;
          while (friday <=31){
-             System.out.println("Сегодня пятница,"+ friday + "-е число. Необходимо подготовить отчет");
+             System.out.println("Сегодня пятница,"+ friday + "-е число. Необходимо подготовить отчет.");
              friday += daysPerWeek;
          }
 
