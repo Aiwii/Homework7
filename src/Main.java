@@ -37,11 +37,11 @@ public class Main {
         System.out.println("Task 3");
 
         int population = 12_000_000;
-        int birthRate = 17 * population / 1000;
-        int deathRate = 8 * population / 1000;
+        int birthRate = 17;
+        int deathRate = 8;
 
         for (int i = 1; i <= 10; i++ ){
-        population = population + birthRate - deathRate;;
+            population += population / 1000 * (birthRate - deathRate);;
             System.out.println("Год " + i + ", численность населения составляет " + population);
         }
 
@@ -58,7 +58,7 @@ public class Main {
 
             ++month;
 
-            System.out.println("Месяц " + month + ", сумма накомлений равная " + currentMoney + " рублей." );
+            System.out.println("Месяц " + month + ", сумма накоплений равная " + currentMoney + " рублей." );
 
         }
 
@@ -74,7 +74,7 @@ public class Main {
 
             ++month;
                 if (month % 6 == 0)
-            System.out.println("Месяц " + month + ", сумма накомлений равная " + currentMoney + " рублей." );
+            System.out.println("Месяц " + month + ", сумма накоплений равная " + currentMoney + " рублей." );
             }
 
         //Task 6
@@ -84,7 +84,7 @@ public class Main {
         for ( int i = 1; i <= 9 * 12; i++) {
             currentMoney *= 1.07;
             if (i % 6 == 0) {
-                System.out.println("Месяц " + i + ", сумма накомлений равная " + currentMoney + " рублей.");
+                System.out.println("Месяц " + i + ", сумма накоплений равная " + currentMoney + " рублей.");
             }
         }
 
