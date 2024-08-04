@@ -41,7 +41,7 @@ public class Main {
         int deathRate = 8;
 
         for (int i = 1; i <= 10; i++ ){
-            population += population / 1000 * (birthRate - deathRate);;
+            population += population / 1000 * (birthRate - deathRate);
             System.out.println("Год " + i + ", численность населения составляет " + population);
         }
 
