@@ -9,6 +9,7 @@ public class Main {
         int total = 2_459_000;
         int month = 0;
 
+
             while (currentMoney <= total) {
                 currentMoney += moneyPerMouth;
                 ++month;
@@ -50,9 +51,10 @@ public class Main {
         currentMoney = 15000;
         total = 12_000_000;
         month = 0;
+        double interestRate = 0.07;
 
         while (currentMoney <= total) {
-            currentMoney *= 1.07;
+            currentMoney += currentMoney * interestRate;
 
             ++month;
 
@@ -102,8 +104,8 @@ public class Main {
          int startYear = currentYear - 200;
          int finishYear = currentYear + 100;
 
-         for (int i = startYear; i <= finishYear; i++ ){
-             if (i % 79 == 0){
+         for (int i = startYear; i <= finishYear; i++ ) {
+             if (i % 79 == 0) {
                  System.out.println(i);
              }
          }
